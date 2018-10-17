@@ -1,0 +1,11 @@
+<div class="list-group-item flex-column align-items-start">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{user.name}}</h5>
+    <small>{{user.phone}}</small>
+  </div>
+  <p class="mb-1">{{user.lastname}}</p>
+  <hr>
+
+  <button type="button" class="btn btn-danger btn-sm" (click)="onDelete()">Delete User</button>
+  <button type="button" class="btn btn-success btn-sm" (click)="onDelete()">Edit User</button>
+</div>
