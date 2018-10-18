@@ -10,3 +10,8 @@ export class User {
 export interface Users {
   users: User[]
 }
+
+export interface UserUpdate {
+  index: number;
+  data: User;
+}

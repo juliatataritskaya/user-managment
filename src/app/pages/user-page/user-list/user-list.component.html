@@ -1,6 +1,14 @@
 <div class="container">
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-success nav-link"
+            [routerLink] = "['/users/new']" routerLinkActive="active">Add</button>
+  </div>
+
   <div class="list-group mt-4">
-    <app-user [user]="user" *ngFor="let user of users | async"
-              (deleteUser)="onDelete($event)"></app-user>
+    <app-user [user]="user" *ngFor="let user of users | async; let i = index"
+              (deleteUser)="onDelete($event, i)"
+              (editUser)="onEdit($event)"></app-user>
+
   </div>
 </div>

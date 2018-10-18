@@ -1,9 +1,11 @@
 import { Action } from '@ngrx/store';
-import { User } from './../models/user.model';
+import { User, UserUpdate } from './../models/user.model';
 
 
 export const REMOVE_USER    = '[USER] Remove';
 export const LOAD_USER    = '[USER] Load';
+export const ADD_USER       = '[USER] Add';
+export const UPDATE_USER    = '[USER] Update';
 
 
 export class LoadUser implements Action {
@@ -18,5 +20,16 @@ export class RemoveUser implements Action {
   constructor(public payload: number) {}
 }
 
+export class AddUser implements Action {
+  readonly type = ADD_USER;
 
-export type Actions = LoadUser | RemoveUser ;
+  constructor(public payload: User) {}
+}
+
+export class UpdateUser implements Action {
+  readonly type = UPDATE_USER;
+
+  constructor(public payload: UserUpdate) {}
+}
+
+export type Actions = LoadUser | RemoveUser | AddUser | UpdateUser;

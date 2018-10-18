@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 offset-1">
+
+      <form [formGroup]="userForm">
+
+        <div class="form-group" *ngIf="userData">
+          <label for="id">ID</label>
+          <input type="text" class="form-control" id="id" formControlName="id" [attr.disabled]='true'>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name"  placeholder="Enter name"
+                 formControlName="name">
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Lastname</label>
+          <input type="text" class="form-control" id="lastname" placeholder="Enter lastname"
+                 formControlName="lastname">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter phone"
+                 formControlName="phone">
+        </div>
+
+        <button type="button" class="btn btn-success" (click)="onSave()">SAVE</button>
+        <button class="btn btn-primary" [routerLink]="['/users']">CANCEL</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>

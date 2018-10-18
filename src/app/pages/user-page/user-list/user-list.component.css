@@ -1,0 +1,7 @@
+.container {
+  margin-top: 5%;
+}
+
+app-user:not(:last-child) {
+  margin-bottom: 2%;
+}
