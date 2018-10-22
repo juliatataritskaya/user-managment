@@ -3,3 +3,7 @@
 button {
   margin: 2px;
 }
+
+body, html {
+  height: 100%;
+}

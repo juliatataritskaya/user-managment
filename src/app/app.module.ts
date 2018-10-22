@@ -10,6 +10,7 @@ import {ServicesModule} from './services/services.module';
 import {MapPageModule} from './pages/map-page/map-page.module';
 import {MenuPageModule} from './pages/menu/menu-page.module';
 import {HomePageModule} from './pages/home-page/home-page.module';
+import {AuthModule} from './pages/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {HomePageModule} from './pages/home-page/home-page.module';
     MapPageModule,
     MenuPageModule,
     HomePageModule,
+    AuthModule,
     HttpClientModule,
     ServicesModule,
     StoreModule.forRoot({

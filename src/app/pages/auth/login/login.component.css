@@ -1,0 +1,9 @@
+.login-page-wrapper {
+  background: url("../../../../assets/img/background-img.jpg") no-repeat center;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.login-button {
+  text-align: center;
+}

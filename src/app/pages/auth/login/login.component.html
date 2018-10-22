@@ -1,0 +1,111 @@
+<div class="login-page-wrapper">
+  <!--<div id="alert-error"-->
+       <!--class="alert alert-danger alert-dismissable animated fadeInDown col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"-->
+       <!--*ngIf="errorMessage"-->
+       <!--role="alert" aria-live="assertive" aria-atomic="true" aria-relevant="all" aria-labelledby="alert-title"-->
+       <!--aria-describedby="alert-title">-->
+    <!-- -->
+    <!--<button role="button" aria-label="Close" aria-controls="alert-error" class="close" type="button"-->
+            <!--(click)="errorMessage = null"><i class="fa fa-times"></i></button>-->
+    <!--  <strong><i class="fa fa-exclamation-triangle"></i> <span id="alert-title">Error!</span></strong> <span-->
+    <!--id="alert-message">{{ errorMessage }}</span>-->
+  <!--</div>-->
+
+  <!--<form [formGroup]="userForm">-->
+
+    <!--<div class="form-group" *ngIf="userData">-->
+      <!--<label for="id">ID</label>-->
+      <!--<input type="text" class="form-control" id="id" formControlName="id" [attr.disabled]='true'>-->
+    <!--</div>-->
+
+    <!--<div class="form-group">-->
+      <!--<label for="name">Name</label>-->
+      <!--<input type="text" class="form-control" id="name"  placeholder="Enter name"-->
+             <!--formControlName="name">-->
+    <!--</div>-->
+
+    <!--<div class="form-group">-->
+      <!--<label for="lastname">Lastname</label>-->
+      <!--<input type="text" class="form-control" id="lastname" placeholder="Enter lastname"-->
+             <!--formControlName="lastname">-->
+    <!--</div>-->
+
+    <!--<div class="form-group">-->
+      <!--<label for="phone">Phone</label>-->
+      <!--<input type="text" class="form-control" id="phone" placeholder="Enter phone"-->
+             <!--formControlName="phone">-->
+    <!--</div>-->
+
+    <!--<button type="button" class="btn btn-success" (click)="onSave()">SAVE</button>-->
+    <!--<button class="btn btn-primary" [routerLink]="['home/users/list']">CANCEL</button>-->
+
+  <!--</form>-->
+
+
+
+  <!--<div class="panel panel-default col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">-->
+    <!--<div class="panel-heading"><h4>Login</h4></div>-->
+    <!--<div class="panel-body">-->
+
+      <!--<form [formGroup]="loginForm" class="form-horizontal">-->
+
+        <!--<div class="col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 form-group">-->
+          <!--<label class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-1-->
+        <!--col-xs-offset-1 col-xs-3 control-label">User name</label>-->
+          <!--<div class="col-md-7 col-sm-7 col-xs-7">-->
+            <!--<div>-->
+              <!--<input type="text" class="form-control" formControlName="login" title="" required>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 form-group">-->
+          <!--<label class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-1-->
+        <!--col-xs-offset-1 col-xs-3 control-label">Password</label>-->
+          <!--<div class="col-md-7 col-sm-7 col-xs-7">-->
+            <!--<div>-->
+              <!--<input type="password" class="form-control" formControlName="password" title="" required>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!-- -->
+        <!--<div class="col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 form-group">-->
+          <!--<div class="col-md-4 col-lg-4 col-lg-offset-4 col-md-offset-4">-->
+            <!--<button class="btn btn-block" (click)="login()">Login</button>-->
+          <!--</div>-->
+        <!--</div>-->
+
+      <!--</form>-->
+
+    <!--</div>-->
+  <!--</div>-->
+
+    <div class="">
+      <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-8 offset-sm-2 col-xs-10 offset-xs-1">
+
+        <form [formGroup]="loginForm">
+
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email"  placeholder="Enter email"
+                   formControlName="login" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                   formControlName="password" required>
+          </div>
+
+          <div class="login-button">
+            <button type="button" mat-raised-button color="primary" (click)="login()">LOGIN</button>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+</div>
