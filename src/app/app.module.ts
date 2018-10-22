@@ -7,6 +7,9 @@ import {AppRoutingModule} from './app.routing.module';
 import {UserModule} from './pages/user-page/user.module';
 import {HttpClientModule} from '@angular/common/http';
 import {ServicesModule} from './services/services.module';
+import {MapPageModule} from './pages/map-page/map-page.module';
+import {MenuPageModule} from './pages/menu/menu-page.module';
+import {HomePageModule} from './pages/home-page/home-page.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import {ServicesModule} from './services/services.module';
     AppRoutingModule,
     BrowserModule,
     UserModule,
+    MapPageModule,
+    MenuPageModule,
+    HomePageModule,
     HttpClientModule,
     ServicesModule,
     StoreModule.forRoot({

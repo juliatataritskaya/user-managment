@@ -21,7 +21,7 @@ export class NewUserComponent {
     this.userService.addUser(value['userData'].value).subscribe((data) => {
       alert('User ' + data.name + ' ' + data.lastname + ' was added.');
       this.store.dispatch(new UserActions.AddUser(data));
-      this.router.navigate(['/users']);
+      this.router.navigate(['../list']);
     }, (error) => {
       console.log(error);
     });

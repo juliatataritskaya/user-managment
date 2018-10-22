@@ -7,15 +7,13 @@ import {EditUserRoutes} from './edit/edit-user.routes';
 
 
 export const UserRoutes: Routes = [
-  {path: '', redirectTo: 'users', pathMatch: 'full'},
-  {
-    path: 'users', component: UserPageComponent, children: [
+  { path: '', redirectTo: 'users', pathMatch: 'full'},
+  { path: 'users', component: UserPageComponent, children: [
     ...UserListRoutes,
     ...NewUserRoutes,
     ...EditUserRoutes
   ]
-  },
-  {path: '**', redirectTo: 'users', pathMatch: 'full'}
+  }
 ];
 
 @NgModule({

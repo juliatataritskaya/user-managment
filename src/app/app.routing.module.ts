@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {UserRoutes} from './pages/user-page/user.routing';
+import {HomePageRoutes} from './pages/home-page/home-page.routing';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'user', pathMatch: 'full'},
-  ...UserRoutes,
-  {path: '**', redirectTo: 'users', pathMatch: 'full'}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  ...HomePageRoutes,
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({

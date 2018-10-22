@@ -33,8 +33,4 @@ export class UserListComponent implements OnInit {
     });
   }
 
-  // Navigate to edit page
-  onEdit(editUser: User) {
-    this.router.navigate(['/users/edit/' + editUser.id]);
-  }
 }

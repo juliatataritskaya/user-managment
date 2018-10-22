@@ -1,0 +1,62 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  position: fixed;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  padding: 0;
+}
+
+mat-sidenav {
+  width: 250px;;
+
+}
+.circle {
+  border-radius: 50%;
+}
+
+.with-bg {
+  background: url('../../../assets/img/background-img.jpg') no-repeat center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  max-height: 130px;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+:host /deep/ .mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+.header-box-shadow {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.bottom-to-top {
+  border: 0;
+  border-right: 1px;
+  border-style: solid;
+  border-image:
+    linear-gradient(to top, #c1c1c1, rgba(0, 0, 0, 0)) 1 100%
+}
+
+html, body, mat-sidenav-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+:host /deep/ .mat-drawer-inner-container {
+  overflow: hidden;
+}

@@ -41,7 +41,7 @@ export class EditUserComponent implements OnInit {
       .subscribe((result) => {
         alert('User ' + result.name + ' was updated.');
         this.store.dispatch(new UserActions.UpdateUser(data.userData.value));
-        this.router.navigate(['/users']);
+        this.router.navigate(['../list']);
       })
   }
 
