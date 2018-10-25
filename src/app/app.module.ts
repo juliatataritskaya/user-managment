@@ -11,6 +11,7 @@ import {MapPageModule} from './pages/map-page/map-page.module';
 import {MenuPageModule} from './pages/menu/menu-page.module';
 import {HomePageModule} from './pages/home-page/home-page.module';
 import {AuthModule} from './pages/auth/auth.module';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {AuthModule} from './pages/auth/auth.module';
     AuthModule,
     HttpClientModule,
     ServicesModule,
+    SharedModule,
     StoreModule.forRoot({
       user: reducer
     })

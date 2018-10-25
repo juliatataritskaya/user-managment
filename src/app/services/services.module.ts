@@ -1,9 +1,10 @@
 import {NgModule} from '@angular/core';
 import {UserService} from './user.service';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
-  imports: [],
+  imports: [SharedModule],
   declarations: [],
   exports: [],
   providers: [UserService]

@@ -21,6 +21,7 @@ export class UserListComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getUsers().subscribe((data) => {
+      console.log(data);
       this.store.dispatch(new UserActions.LoadUser(data));
       this.users = this.store.select('user');
     });

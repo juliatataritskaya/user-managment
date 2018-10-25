@@ -1,9 +1,15 @@
 import {Injectable} from '@angular/core';
 import {User} from '../models/user.model';
 import {Observable} from 'rxjs/index';
+import {HttpClient} from "@angular/common/http";
+import {BaseHttpService} from './base.http.service';
+import {environment} from "../../environments/environment";
 
 @Injectable()
-export class UserService {
+export class UserService  extends BaseHttpService {
+
+  private static usersUrl = environment.serverUrl + 'users';
+
   public id = 3;
 
   public initialUsers: User[] = [
@@ -12,11 +18,16 @@ export class UserService {
     {id: 3, name: 'Name3', lastname: 'Lastname 3', phone: '235252352'}
   ];
 
-  constructor () {}
+  constructor (protected http: HttpClient) {
+    super(http);
+  }
 
-  public getUsers (): Observable<User[]> {
+  public getUsers (): Observable<any> {
     return new Observable (observer => {
-      observer.next(this.initialUsers)
+      this.get(UserService.usersUrl, {}).subscribe((data) => {
+        console.log(data);
+      })
+      // observer.next(this.initialUsers)
     });
   }
 

@@ -1,9 +1,10 @@
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mergeMap';
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/mergeMap';
 import { Observable } from 'rxjs';
+// import { catchError, map, catch, mergeMap } from 'rxjs/operators';
 
 @Injectable()
 export abstract class BaseHttpService {
